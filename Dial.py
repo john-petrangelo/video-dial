@@ -3,7 +3,7 @@ import board
 import keypad
 
 
-# CONFIGURATION
+### CONFIGURATION
 
 mic_gp = board.GP13
 cam_gp = board.GP2
@@ -19,7 +19,7 @@ mode_zoom = 0
 # default mode is Zoom - if switch is in Teams position then we'll get a "pressed" event on startup
 mode = mode_zoom
 
-# MAIN PROGRAM
+### MAIN PROGRAM
 
 print("Dial starting up")
 
