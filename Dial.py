@@ -27,7 +27,7 @@ def setup_button(pin):
     
 
 def print_state():
-        print(f"Volume={new_volume} Cam={new_cam_state:1}  Mic={new_mic_state:1}  Mode={new_mode_state:1}")
+        print(f"Volume={new_volume} Mic={new_mic_state:1}  Cam={new_cam_state:1}  Mode={new_mode_state:1}")
 
 
 # MAIN PROGRAM
