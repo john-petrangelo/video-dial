@@ -31,21 +31,17 @@ mode = mode_zoom
 def toggle_mic():
     print("toggling mic")
     if mode == mode_teams:
-        #kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.M)
-        kbd.send(Keycode.SHIFT, Keycode.M)
+        kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.M)
     else:
-        #kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.A)
-        kbd.send(Keycode.SHIFT, Keycode.A)
+        kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.A)
 
 
 def toggle_cam():
     print("toggling cam")
     if mode == mode_teams:
-        #kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.O)
-        kbd.send(Keycode.SHIFT, Keycode.O)
+        kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.O)
     else:
-        #kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.V)
-        kbd.send(Keycode.SHIFT, Keycode.V)
+        kbd.send(Keycode.COMMAND, Keycode.SHIFT, Keycode.V)
 
 
 ### MAIN PROGRAM
