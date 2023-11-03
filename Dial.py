@@ -7,13 +7,14 @@ from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
+import time
 
 ### CONFIGURATION
 
 # GPIO pin assignements
-mic_gp = board.GP13
+mic_gp = board.GP9
 cam_gp = board.GP2
-mode_gp = board.GP9
+mode_gp = board.GP6
 
 # Keypad indices
 mic_key = 0
@@ -51,6 +52,7 @@ def toggle_cam():
 
 
 print("Dial starting up")
+print(f"Setting mode to {mode}")
 
 # Setup the USB HID devices
 consumer_control = ConsumerControl(usb_hid.devices)
